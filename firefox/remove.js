@@ -2,8 +2,8 @@ function remove() {
   tag_name = "a";
   let els = document.getElementsByTagName(tag_name);
   Array.prototype.forEach.call(els, function(el) {
-    if (el.href.includes("company")) {
-      var art_el = el.parentElement.parentElement;
+    if (el.href.includes("companies")) {
+      var art_el = el.parentElement.parentElement.parentElement;
       if(art_el != null)
       {
         art_el.innerHTML = '';
